@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Técnico | Constanza V.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Constanza V.</h1>
+            <p class="subtitle">Desarrolladora de Software Junior / Trainee</p>
+            <div class="contact-info">
+                <a href="mailto:varela.videla@gmail.com">varela.videla@gmail.com</a> | 
+                <a href="https://www.linkedin.com/in/constanza-varela-v/" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/PandaTh-code" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Soy una desarrolladora apasionada por la tecnología con un gran foco en la mejora continua y el aprendizaje rápido. Recientemente he completado un bootcamp intensivo de desarrollo de software donde adquirí sólidas bases técnicas y experiencia práctica construyendo proyectos reales. Me considero una persona proactiva y con gran tolerancia a la frustración, lista para enfrentar nuevos desafíos y aportar valor en un equipo dinámico.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Mis Proyectos</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>GestorPro</h3>
+                    <p>Aplicación web full-stack para la gestión eficiente de proyectos y tareas con autenticación y panel de administración.</p>
+                    <span class="tag">Python</span> <span class="tag">Django</span> <span class="tag">Bootstrap</span>
+                </div>
+                <div class="card">
+                    <h3>AlkeWallet</h3>
+                    <p>Billetera virtual desarrollada para gestionar transacciones, saldos y usuarios de manera segura.</p>
+                    <span class="tag">Base de Datos</span> <span class="tag">Backend</span>
+                </div>
+                <div class="card">
+                    <h3>Proyecto Blog</h3>
+                    <p>Plataforma de publicación de artículos con gestión de contenido y comentarios.</p>
+                    <span class="tag">Desarrollo Web</span> <span class="tag">Frontend</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="caso-estudio" class="highlight">
+            <h2>Caso de Estudio Destacado: GestorPro</h2>
+            <img src="gestorpro_dashboard.jpg" alt="Gestión de proyectos y código" style="width: 100%; max-height: 400px; object-fit: contain; border-radius: 8px; margin-bottom: 20px; background-color: #f1f3f4;">
+            <div class="case-study-content">
+                <h3>Breve descripción</h3>
+                <p>GestorPro es un Task & Project Manager, una aplicación web full-stack desarrollada con Django. Permite a los usuarios registrarse, autenticarse y organizar su flujo de trabajo a través de una interfaz moderna y responsiva.</p>
+
+                <h3>Desafío principal</h3>
+                <p>El mayor reto fue implementar un sistema de seguridad y permisos robusto que garantizara que cada usuario solo pudiera ver y modificar sus propios proyectos y tareas, integrando además funcionalidades de recuperación de contraseñas y un panel de administración personalizado.</p>
+
+                <h3>Solución propuesta</h3>
+                <p>Utilicé validaciones nativas de Django, protección CSRF y Mixins (`LoginRequiredMixin`, `UserPassesTestMixin`) para el control de acceso. Para el frontend, apliqué Bootstrap 5 para crear una interfaz "Split-Screen" y tarjetas interactivas que mejoran la experiencia de usuario (UX).</p>
+
+                <h3>Herramientas técnicas utilizadas</h3>
+                <p>Python 3.8+, Django Framework, SQLite, Bootstrap 5.3, HTML5, CSS3, Git.</p>
+
+                <h3>Principales aprendizajes</h3>
+                <p>Consolidé mis conocimientos en el patrón MVT (Modelo-Vista-Template) de Django, el manejo avanzado de consultas a bases de datos relacionales mediante el ORM, y la importancia de escribir código limpio y seguro. Además, aprendí a integrar diseños UI/UX modernos en aplicaciones backend.</p>
+
+                <h3>Habilidades aplicadas</h3>
+                <p>Desarrollo Full-Stack, Diseño de Base de Datos, Autenticación y Autorización, Diseño UI/UX responsivo, Resolución de problemas.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Constanza V. - Creado para el proyecto integrador Alkemy.</p>
+        </div>
+    </footer>
+</body>
+</html>
